@@ -3,7 +3,6 @@ import pandas as pd
 import os
 import ast
 from datetime import datetime, date, timedelta
-from streamlit_calendar import calendar
 
 
 def migrate_data():
@@ -240,19 +239,3 @@ def show_dashboard(df):
                     )
                     progress_df["cumulative"] = progress_df["value"].cumsum()
                     st.line_chart(progress_df["cumulative"], use_container_width=True)
-            
-            with col2:
-                # Calendar view
-                calendar_options = {
-                    "headerToolbar": {
-                        "left": "prev,next",
-                        "center": "title",
-                        "right": "today"
-                    },
-                    "initialView": "dayGridMonth",
-                    "selectable": True,
-                    "height": 350,
-                }
-                
-                events = generate_calendar_events(goal)
-                calendar(events=events, options=calendar_options)

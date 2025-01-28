@@ -1,2 +1,2 @@
 goal_id,title,target_value,tracking_type,start_date,end_date,progress_logs,notes
-c17bf1a5-b814-4c00-b6ea-de01ce860b51,Goal Tracking App,1,hours,2025-01-28,2025-12-31,{'2025-01-28': 1.0},{'2025-01-28': 'I started working on it and i made a demo on streamlit with basic logic. '}
+c17bf1a5-b814-4c00-b6ea-de01ce860b51,Goal Tracking App,1,hours,2025-01-28,2025-12-31,"{'2025-01-28': 1.0, '2025-01-29': 0.0, '2025-01-30': 1.0}","{'2025-01-28': 'I started working on it and i made a demo on streamlit with basic logic. ', '2025-01-29': 'sa'}"
